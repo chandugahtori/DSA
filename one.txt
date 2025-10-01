@@ -1,0 +1,106 @@
+  if a^b = c , then a^c = b
+    and b^c = a
+    
+
+
+
+GCD --->
+
+  .  gcd(0,a) = a
+  .  gcd(a,b) = gcd(b%a, a)    --> if    a<=b       euclidean algo  O(log base 10 (min(a,b)))
+  .  gcd(a,b) = gcd(b-a, a)
+  .  gcd(a,a+d, a+2d, .......a+nd) = gcd(a,d)
+  .  gcd(a2-a1, a3-a2,.....,an-an-1) = d
+
+
+int mygcd(int a, int b){
+  while(a>0){
+    int temp = a;
+    a=b%a;
+    b=temp;
+  }
+  reutun b;
+}
+
+
+
+STRINGS -->
+    In Java, String objects are immutable. Every time you modify a String, a new object is created → 
+    this can waste memory and reduce performance in loops or large text operations.
+    StringBuilder solves this by allowing changes on the same object.
+
+  StringBuilder sb = new StringBuilder("");
+
+   example -->
+              String str = "Tonny";
+              for(char ch='a' ; ch<='z' ; ch++){
+                str +=ch; 
+              }
+              stack memory and heap memory
+              in this every time a new String is creats in heap memory and str in 
+              stack is poiting to the new one every time.
+              in worst case the TC --> n*n = n^2
+
+
+
+              methods used in string StringBuilder-->
+
+              append(String str) → add text at the end
+              insert(int index, String str) → insert text at a position
+              replace(int start, int end, String str) → replace part of text     (In String: returns a new String. 
+                                                                                  In StringBuilder: changes in place.)
+              delete(int start, int end) → delete part of text
+              reverse() → reverse the whole string
+              length() → returns length                                          (also used in string ) 
+              charAt(int index) → get character at index                         (also used in string )
+              setCharAt(int index, char ch) → change a character
+
+
+
+  monotonic stack --> that keeps its elements in a sorted order 
+  (monotonic = always increasing or always decreasing).
+            Why use Monotonic Stack?
+            Problems like:
+            Next Greater Element (NGE)
+            Next Smaller Element (NSE)
+            Stock Span Problem
+            Trapping Rain Water
+            Largest Rectangle in Histogram
+
+
+
+
+
+
+
+
+
+
+
+BINARY TREE -->
+  at max 2 childrens
+  node --> object having three section --> value, left, right
+  
+  travelsal techniques -->
+  preorder --> root left right
+  inorder --> left root right
+  postorder --> left right root
+
+
+
+
+
+
+
+
+
+
+
+
+      DP----------->
+we use dp when -->
+  total number of possibilities
+  min number "      "
+  max number  "       "
+
+

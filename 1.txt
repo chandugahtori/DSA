@@ -1,0 +1,21 @@
+BIT manipulation -->
+
+
+1) -->  n = n|(1<<i)
+2) -->  toggle ith bit 
+            n = n ^ (i<<i)
+3) -->  off the ith bit 
+            n = n&(1<<i)
+4) -->  ((n&(i<<i))>0)
+
+
+int pref(int idx , ArrayList«Integer& fenwick){
+int sum=0;
+int pref(int 1dx, ArrayList«Integer> fenwick){
+while(1dx>0){
+sun+=fenwlck[1dx];
+tdx-=(1dx & (~tdx));
+return sum;
+void update(int idx.int val,ArrayList«Integer> fenwick){
+while(idx< fenwick.stze())
+}}}}
